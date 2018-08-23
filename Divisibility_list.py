@@ -9,12 +9,13 @@ lst_numb=[]
 for i in range(0,50):
     lst_numb.insert(i,i+1)
 
-a, b = input().split()
+a = input()
 
 a=int(a)
-b=int(b)
 
-lst_numb=lst_numb[a:b]
-
+count=0
 for data in lst_numb:
-    print(data)
+    if data!=0:
+        if data%a==0:
+            count=count+1
+print(count-1)
